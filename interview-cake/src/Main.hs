@@ -8,4 +8,5 @@ import qualified Meetings        as Meet
 import qualified MeshNetwork     as MeshNet
 
 main :: IO ()
-main = print $ C.findDenoms3 M.empty ([1,5,10], 12)
+main = print $ C.makeChangeBottomUp [1,2] 3
+-- main = print $ C.findDenoms3 mempty ([1,2], 3)
